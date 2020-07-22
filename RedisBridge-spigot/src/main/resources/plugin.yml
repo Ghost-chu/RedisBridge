@@ -1,0 +1,4 @@
+name: RedisBridge
+version: ${project.version}
+main: com.mcsunnyside.redisbridge.redisbridge.RedisBridgeSpigot
+api-version: 1.13
