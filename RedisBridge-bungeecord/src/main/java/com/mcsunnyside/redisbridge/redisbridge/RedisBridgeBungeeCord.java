@@ -10,6 +10,7 @@ import net.md_5.bungee.config.Configuration;
 import net.md_5.bungee.config.ConfigurationProvider;
 import net.md_5.bungee.config.YamlConfiguration;
 import org.jetbrains.annotations.NotNull;
+import redis.clients.jedis.Jedis;
 
 import java.io.File;
 import java.io.IOException;
@@ -76,5 +77,10 @@ public final class RedisBridgeBungeeCord extends Plugin implements RedisBridge {
      */
     public void register(@NotNull String namespace, @NotNull Listener listener) {
         BusManager.registerListener(namespace, listener);
+    }
+
+    @Override
+    public @NotNull Jedis getJedis() {
+        return connection.getJedis();
     }
 }

@@ -1,6 +1,7 @@
 package com.mcsunnyside.redisbridge.common;
 
 import com.google.gson.Gson;
+import lombok.Getter;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import redis.clients.jedis.Jedis;
@@ -8,6 +9,7 @@ import redis.clients.jedis.Jedis;
 public class RedisConnection implements Connection {
     private static final String CHANNEL_NAME = "redis-bridge";
     private static final Gson gson = new Gson();
+    @Getter
     private Jedis jedis;
 
     @Override

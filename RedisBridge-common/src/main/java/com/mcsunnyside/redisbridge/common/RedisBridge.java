@@ -2,6 +2,7 @@ package com.mcsunnyside.redisbridge.common;
 
 import com.mcsunnyside.redisbridge.common.bus.Listener;
 import org.jetbrains.annotations.NotNull;
+import redis.clients.jedis.Jedis;
 
 public interface RedisBridge {
 
@@ -22,4 +23,12 @@ public interface RedisBridge {
      * @param listener  The listener you want to register
      */
     void register(@NotNull String namespace, @NotNull Listener listener);
+
+    /**
+     * Gets jedis directly
+     *
+     * @return Jedis
+     */
+    @NotNull
+    Jedis getJedis();
 }

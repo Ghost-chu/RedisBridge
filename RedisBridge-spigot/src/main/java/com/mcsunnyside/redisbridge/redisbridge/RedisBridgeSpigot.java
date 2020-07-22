@@ -7,6 +7,7 @@ import com.mcsunnyside.redisbridge.common.bus.BusManager;
 import com.mcsunnyside.redisbridge.common.bus.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.jetbrains.annotations.NotNull;
+import redis.clients.jedis.Jedis;
 
 public final class RedisBridgeSpigot extends JavaPlugin implements RedisBridge {
     private Connection connection;
@@ -49,5 +50,10 @@ public final class RedisBridgeSpigot extends JavaPlugin implements RedisBridge {
      */
     public void register(@NotNull String namespace, @NotNull Listener listener) {
         BusManager.registerListener(namespace, listener);
+    }
+
+    @Override
+    public @NotNull Jedis getJedis() {
+        return connection.getJedis();
     }
 }
