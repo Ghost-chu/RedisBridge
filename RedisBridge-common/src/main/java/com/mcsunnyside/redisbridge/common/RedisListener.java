@@ -1,8 +1,8 @@
-package com.mcsunnyside.redisbridge.common.connection;
+package com.mcsunnyside.redisbridge.common;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
-import com.mcsunnyside.redisbridge.common.connection.bus.BusManager;
+import com.mcsunnyside.redisbridge.common.bus.BusManager;
 import redis.clients.jedis.JedisPubSub;
 
 public class RedisListener extends JedisPubSub {

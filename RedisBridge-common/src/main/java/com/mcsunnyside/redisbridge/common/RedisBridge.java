@@ -1,6 +1,6 @@
-package com.mcsunnyside.redisbridge.common.connection;
+package com.mcsunnyside.redisbridge.common;
 
-import com.mcsunnyside.redisbridge.common.connection.bus.Listener;
+import com.mcsunnyside.redisbridge.common.bus.Listener;
 import org.jetbrains.annotations.NotNull;
 
 public interface RedisBridge {

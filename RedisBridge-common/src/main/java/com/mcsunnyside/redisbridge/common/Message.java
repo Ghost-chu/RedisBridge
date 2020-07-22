@@ -1,4 +1,4 @@
-package com.mcsunnyside.redisbridge.common.connection;
+package com.mcsunnyside.redisbridge.common;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

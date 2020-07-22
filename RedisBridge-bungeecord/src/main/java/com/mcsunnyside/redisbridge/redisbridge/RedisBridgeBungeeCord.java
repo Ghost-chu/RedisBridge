@@ -1,10 +1,10 @@
 package com.mcsunnyside.redisbridge.redisbridge;
 
-import com.mcsunnyside.redisbridge.common.connection.Connection;
-import com.mcsunnyside.redisbridge.common.connection.RedisBridge;
-import com.mcsunnyside.redisbridge.common.connection.RedisConnection;
-import com.mcsunnyside.redisbridge.common.connection.bus.BusManager;
-import com.mcsunnyside.redisbridge.common.connection.bus.Listener;
+import com.mcsunnyside.redisbridge.common.Connection;
+import com.mcsunnyside.redisbridge.common.RedisBridge;
+import com.mcsunnyside.redisbridge.common.RedisConnection;
+import com.mcsunnyside.redisbridge.common.bus.BusManager;
+import com.mcsunnyside.redisbridge.common.bus.Listener;
 import net.md_5.bungee.api.plugin.Plugin;
 import net.md_5.bungee.config.Configuration;
 import net.md_5.bungee.config.ConfigurationProvider;

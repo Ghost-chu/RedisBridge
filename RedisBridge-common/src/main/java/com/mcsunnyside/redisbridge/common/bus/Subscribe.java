@@ -1,4 +1,4 @@
-package com.mcsunnyside.redisbridge.common.connection.bus;
+package com.mcsunnyside.redisbridge.common.bus;
 
 import com.sun.istack.internal.NotNull;
 
