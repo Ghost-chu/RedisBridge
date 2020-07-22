@@ -28,7 +28,7 @@ public class BusManager {
                 if (subscribe == null) {
                     continue;
                 }
-                if (!subscribe.channel.equals(channel)) {
+                if (!subscribe.channel().equals(channel)) {
                     continue;
                 }
                 //Check args
