@@ -1,7 +1,6 @@
-#RedisBridge
+# RedisBridge
 A cross-platform real-time data transfer library.
 
-## 
 
 ## How 2 use
 
@@ -72,3 +71,4 @@ class YourListener implements com.mcsunnyside.redisbridge.common.bus.Listener{
     }  
 }
 ````
+More platform support will be added in future.
