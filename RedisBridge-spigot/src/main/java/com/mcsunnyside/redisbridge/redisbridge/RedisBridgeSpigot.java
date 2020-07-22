@@ -1,13 +1,14 @@
 package com.mcsunnyside.redisbridge.redisbridge;
 
 import com.mcsunnyside.redisbridge.common.connection.Connection;
+import com.mcsunnyside.redisbridge.common.connection.RedisBridge;
 import com.mcsunnyside.redisbridge.common.connection.RedisConnection;
 import com.mcsunnyside.redisbridge.common.connection.bus.BusManager;
 import com.mcsunnyside.redisbridge.common.connection.bus.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.jetbrains.annotations.NotNull;
 
-public final class RedisBridgeSpigot extends JavaPlugin {
+public final class RedisBridgeSpigot extends JavaPlugin implements RedisBridge {
     private Connection connection;
 
     @Override

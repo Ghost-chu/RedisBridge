@@ -1,6 +1,7 @@
 package com.mcsunnyside.redisbridge.redisbridge;
 
 import com.mcsunnyside.redisbridge.common.connection.Connection;
+import com.mcsunnyside.redisbridge.common.connection.RedisBridge;
 import com.mcsunnyside.redisbridge.common.connection.RedisConnection;
 import com.mcsunnyside.redisbridge.common.connection.bus.BusManager;
 import com.mcsunnyside.redisbridge.common.connection.bus.Listener;
@@ -15,7 +16,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
 
-public final class RedisBridgeBungeeCord extends Plugin {
+public final class RedisBridgeBungeeCord extends Plugin implements RedisBridge {
     private Connection connection;
     private Configuration config;
 
@@ -53,6 +54,7 @@ public final class RedisBridgeBungeeCord extends Plugin {
     public void onDisable() {
         // Plugin shutdown logic
     }
+
 
     /**
      * Push the message to the bus line.
